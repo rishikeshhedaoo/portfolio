@@ -184,7 +184,7 @@ box-shadow: none;
 }
 
 .button-57:hover {
-background: rgba(246, 246, 246, 0.2); /* Light background color matching the theme */
+box-shadow: rgba(246, 246, 246, 0.2); /* Light background color matching the theme */
 }
 
 .button-57:hover span:last-child {
