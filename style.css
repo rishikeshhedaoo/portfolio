@@ -184,7 +184,7 @@ box-shadow: none;
 }
 
 .button-57:hover {
-background: rgba(235, 0, 114, 0.2); /* Light background color matching the theme */
+background: rgba(246, 246, 246, 0.2); /* Light background color matching the theme */
 }
 
 .button-57:hover span:last-child {
@@ -209,9 +209,9 @@ transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 
 }
 
-.skillbox{
+/* .skillbox{
   
-}
+} */
 
 
 .projects{
