@@ -127,6 +127,11 @@ header{
 .socials img{
   width: 40px;
 }
+.socials button:hover{
+  background: rgba(255, 255, 255, 0.1); /* Light background color */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Apply blur effect for Safari */
+}
 .button-57 {
 position: relative;
 overflow: hidden;
