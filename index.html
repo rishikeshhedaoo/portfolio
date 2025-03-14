@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <script src="script.js">
+        window.addEventListener('scroll',function(){
+    var scrollPosition = window.scrollY;
+    var parCircle = document.querySelector('.circle');
+    parCircle.style.transform = 'translateY('+(scrollPosition/2)+'px)';
+
+    var parCircle1 = document.querySelector('.circle1');
+    parCircle1.style.transform = 'translateX('+(scrollPosition/2)+'px)';
+
+    var parCircle2 = document.querySelector('.circle2');
+    parCircle2.style.transform = 'translateX('+(-scrollPosition/2)+'px)';
+
+    var dp = document.querySelector('.dp');
+    dp.style.opacity = (-scrollPosition%this.window);
+
+    var name= document.querySelector('.namecard');
+    name.style.transform = 'translateY('+(-scrollPosition/2)+'px)';
+
+})
+
+document.addEventListener('mousemove', function(e) {
+    var cursor = document.querySelector('.cursor');
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+  });
+  
+  document.addEventListener('mouseover', function() {
+    var cursor = document.querySelector('.cursor');
+    cursor.classList.add('glow');
+  });
+  
+  document.addEventListener('mouseout', function() {
+    var cursor = document.querySelector('.cursor');
+    cursor.classList.remove('glow');
+  });
+  
+    </script>
+    <div class="cursor"></div>
+   
+    <main>
+        <header>
+            <div class="namecard">
+                <p>Hello! I'am Developer</p>
+                <h1>Rishikesh Hedaoo</h1>
+            </div>
+            <div class="dp">
+                <img src="src/profile-pic.png" alt="profile-pic">
+            </div>
+            <div class="circle"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </header>
+        <h1 class="about" style="font-size: 50px;">Social</h1>
+        <div class="socials">
+            <button class="button-57" role="button"><span class="text"><img src="src/linkedin.svg" alt=""></span><span>LinkedIn</span></button>
+            <button class="button-57" role="button"><span class="text"><img src="src/github.svg" alt=""></span><span>Github</span></button>
+            <button class="button-57" role="button"><span class="text"><img src="src/instagram.svg" alt=""></span><span>Instagram</span></button>
+            <button class="button-57" role="button"><span class="text"><img src="src/twitter.svg" alt=""></span><span>X</span></button>
+            
+        </div>
+        <div class="about">
+            <h1>About me</h1>
+            <p>Hey there! I'm Rishikesh Hedaoo, a passionate learner and creator with a knack for blending creativity with technology. Currently honing my skills at the Indore Institute of Science and Technology, I'm on a journey to explore the ever-evolving landscape of Information Technology.</p>
+        </div>
+        
+        
+        <div class="skillset">
+            <h1>Skills</h1>
+            <div class="skillbox">
+                <div class="webd"></div>
+                <div class="programmming"></div>
+                <div class="dsa"></div>
+                <div class="ui"></div>
+                <div class="technologies"></div>
+            </div>
+        </div>
+
+
+        <div class="projects">
+            <h1>Projects</h1>
+            <div class="project_tile">
+                
+            </div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle5"></div>
+            <div class="circle6"></div>
+            <div class="circle7"></div>
+        </div>
+    </main>
+    <footer>
+       hwllo
+    </footer>
+    
+</body>
+</html>
